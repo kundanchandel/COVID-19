@@ -12,8 +12,6 @@ app.get("/", async function(req, res){
     });
 })
 
-
-
 app.listen(7000, function(){
     console.log("Server is running...")
 })
