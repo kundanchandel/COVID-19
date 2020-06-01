@@ -69,23 +69,26 @@
                           "chart2"
                           "footer";
   }
-  .statistics{
+
+  .card{
     width: 95%;
-    overflow-x: auto;
+    margin: 5px auto 5px auto;
   }
 
   .helpline{
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+
+  .statistics{
     width: 95%;
     margin: 0 auto 0 auto;
+    overflow-x: auto;
   }
  
   .chart1 .chart2{
     width: 95%;
     overflow-x: auto;
-  }
-  .card{
-    width: 95%;
-    margin: 5px auto 5px auto;
   }
 
 }
