@@ -69,4 +69,22 @@
                           "chart2"
                           "footer";
   }
+  .statistics{
+    width: 95%;
+    overflow-x: auto;
+  }
+  .helpline{
+    width: 95%;
+    margin: 0 auto 0 auto;
+  }
+ 
+  canvas{
+    width: 95%;
+    overflow-x: auto;
+
+  }
+  .card{
+    margin: 5px auto 5px auto;
+  }
+
 }
