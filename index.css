@@ -1,3 +1,6 @@
+.body{
+  width:100%;
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -27,22 +30,28 @@
 }
 .data{
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns:2fr 3fr;
   grid-column-gap: 10px;
-  grid-template-areas: "helpline helpline statistics statistics statistics"
-                        "chart1 chart1 chart1 chart1 chart1"
-                        "chart2 chart2 chart2 chart2 chart2"
-                        "footer footer footer footer footer";
+  grid-template-areas: "helpline statistics"
+                        "chart1 chart1"
+                        "chart2 chart2"
+                        "footer footer";
 }
 .helpline {
+  padding: 0px 2px 10px 2px;
   grid-area:helpline;
   margin: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  overflow: auto;
+  white-space: nowrap;
 }
 .statistics {
+  padding: 0px 2px 10px 2px;
   grid-area:statistics;
   margin: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  overflow: auto;
+  white-space: nowrap;
 }
 .chart1 {
   grid-area:chart1;
@@ -57,7 +66,7 @@
   margin: 5px;
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1010px){
   .info{
     grid-template-columns:100%;
   }
@@ -91,4 +100,9 @@
     overflow-x: auto;
   }
 
+}
+@media only screen and (max-width: 1010px){
+  .chart{
+    display: none;
+  }
 }
